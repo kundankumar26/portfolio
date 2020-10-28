@@ -21,5 +21,6 @@ app.get("/resume", function(req, res){
     res.render("resume");
 });  
 
-app.listen(8080);
-console.log('8080 is the magic port');
+app.listen(process.env.PORT, process.env.IP, function(error, response, body){
+    console.log("server started");
+});
