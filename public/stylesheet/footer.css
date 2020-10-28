@@ -1,0 +1,29 @@
+/*end part*/
+.end{
+    text-align: center;
+    padding: 20px 0 20px 0;
+    letter-spacing: 0.8px;
+    color: rgba(255,255,255,0.95);
+}
+#end-color{
+    background-color: #2d4659;
+}
+.end a:hover{
+    color: rgba(255,255,255,0.3);
+}
+.fab{
+    font-size: 1.6em;
+    text-align: center;
+    padding: 0 4px 0 4px;
+    letter-spacing: 0.8px;
+}
+.fab-linked{
+    height: 10em;
+    text-align: center;
+}
+#foot{
+    border-top: 2px solid white;
+    padding-top: 10px;
+    width: 30%;
+    margin: 1px auto;
+}

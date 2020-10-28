@@ -1,0 +1,225 @@
+
+body{
+    background-color: #f2f2f2;
+    font-family: 'Raleway', sans-serif;
+}
+.img{
+    background: linear-gradient(30deg,rgba(0,0,0,0.4),rgba(0,0,0,0.1),rgba(0,0,0,0.4)), 
+    url("https://res.cloudinary.com/kundankumar26/image/upload/v1532206546/portfolio/beverage-3157395_960_720.jpg") no-repeat center;
+    background-size: cover;
+    min-height: 80%;
+    width: 100%;
+    position: relative;
+    animation:1s fadein forwards;
+     margin-top: -10px !important;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, -30%, 0);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+   
+  
+/*projects area css*/
+.padding{
+    padding-top: 20px;
+}
+
+
+/*about me section*/
+.about-me{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2em;
+}
+.profile-pic-img{
+    height: 20em;
+    display: flex;
+    flex: 1 1 20em;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+.about-me-paragraph{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 2em;
+    margin-right: 2em;
+}
+p.about-para{
+    font-family: 'Kalam', cursive;
+    font-size: 1.8em;
+    filter: opacity(0.7);
+}
+
+
+
+@keyframes fadebottom{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, 30%, 0);
+    }
+    100%{
+        transform: none;
+        opacity: 1;
+    }
+}
+
+
+
+
+
+/*photography area images*/
+
+.photography-content{
+    margin-top: 3em;
+}
+.photography-heading{
+    padding-left: 1.5% ;
+    text-transform: capitalize;
+    text-decoration: solid;
+}
+.photography{
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+.photos{
+	max-height: 24%;
+	width: 24%;
+	padding: 1px 0px 2px 0px;
+}
+.video-content{
+    margin-top: 3em;
+}
+
+@media (max-width: 1000px){
+	.photos{
+		max-height: 49%;
+		width: 49%;
+	}
+	.photography-heading{
+        padding-left: 1%;
+    }
+    .img{
+        min-height: 40%;
+    }
+    .about-me{
+        display: flex;
+        flex-direction: column;
+    }
+    .profile-pic-img{
+        height: 20em;
+        display: flex;
+        flex: 0 0 20em;
+        margin-left: 1em;
+        margin-right: 1em;
+        align-items: center;
+    }
+
+    .about-me-paragraph{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 20em;
+        align-content: center;
+        margin-left: 3em;
+        margin-right: 3em;
+    }
+    .photography-content{
+        margin-top: 0em;
+        margin-bottom: 0em;
+    }
+    .video-content{
+        margin-top: 2em;
+        margin-bottom: 0em;
+    }
+    .youtube-videos{
+        flex: 1 1 20em;
+        margin-bottom: 1em;
+    }
+    .videography{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: inherit;
+        justify-content: center;
+        align-items: center;
+        flex: auto;
+    }
+}
+
+
+@media (max-width: 580px){
+	.photos{
+		max-height: 100%;
+		width: 100%;
+    }
+    .photography-content{
+        margin-top: 0em;
+    }
+	.photography-heading{
+        padding-left: 1%;
+    }
+	.about-me{
+        display: flex;
+        flex-direction: column;
+        padding: 30px 0 30px 0;
+    }
+    .profile-pic-img{
+        height: 20em;
+        display: flex;
+        flex: 0 0 20em;
+        margin-left: 1em;
+        margin-right: 1em;
+        align-items: center;
+    }
+    .about-me-paragraph{
+        display: flex;
+        flex-wrap: wrap;
+        flex: 1 1 30em;
+        align-content: center;
+        /* padding-top: 20px; */
+        padding: 3em 0 3em 0;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+
+    /* Videos Section */
+    .video-content{
+        margin-top: 3em;
+        margin-bottom: 0em;
+        width: 600px;
+    }
+    .videography{
+        display: flex;
+        flex-direction: column;
+    }
+    .youtube-videos{
+        flex: 1 1 20em;
+        margin-bottom: 1em;
+    }
+}
+
+
+
+.youtube-videos{
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.videography{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: auto;
+    margin-top: 1em;
+}
+
+
